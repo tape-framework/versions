@@ -23,4 +23,8 @@
     ;; Test Deps
     day8.re-frame/test            {:mvn/version "0.1.5"}
     devcards                      {:mvn/version "0.2.6"}
-    org.webjars.npm/bulma         {:mvn/version "0.8.0"}}}}}
+    org.webjars.npm/bulma         {:mvn/version "0.8.0"}
+
+    ;; App Deps
+    day8.re-frame/http-fx         {:mvn/version "v0.2.0"}
+    }}}}
