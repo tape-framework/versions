@@ -3,28 +3,29 @@
   {:override-deps
    {
     ;; Dev Deps
-    org.clojure/clojurescript     {:mvn/version "1.10.597"}
-    com.bhauman/figwheel-main     {:mvn/version "0.2.3"}
-    binaryage/devtools            {:mvn/version "0.9.11"}
-    day8.re-frame/re-frame-10x    {:mvn/version "0.4.5"}
+    org.clojure/clojurescript     {:mvn/version "1.10.773"}
+    com.bhauman/figwheel-main     {:mvn/version "0.2.12"}
+    binaryage/devtools            {:mvn/version "1.0.2"}
+    day8.re-frame/re-frame-10x    {:mvn/version "0.7.0"}
     me.raynes/fs                  {:mvn/version "1.4.6"}
 
     ;; Core Deps
-    integrant                     {:git/url "https://github.com/weavejester/integrant"
-                                   :sha     "ca8d6327708cf291f2f310d476124271fcbe0b89"}
-    re-frame                      {:mvn/version "0.11.0"}
+    integrant/integrant           {:git/url "https://github.com/weavejester/integrant"
+                                   :sha     "b4f77b0fe9618c5d65bf2cafd27510e8e6ba7cdd"
+                                   :tag     "reflike"}
+    re-frame/re-frame             {:mvn/version "1.1.2"}
 
     ;; Modules Deps
-    metosin/reitit                {:mvn/version "0.3.10"}
-    datascript                    {:mvn/version "0.18.7"}
-    medley                        {:mvn/version "1.2.0"}
+    metosin/reitit                {:mvn/version "0.5.10"}
+    datascript/datascript         {:mvn/version "1.0.1"}
+    medley/medley                 {:mvn/version "1.3.0"}
     cljsjs/react-transition-group {:mvn/version "4.3.0-0"}
 
     ;; Test Deps
     day8.re-frame/test            {:mvn/version "0.1.5"}
-    devcards                      {:mvn/version "0.2.6"}
-    org.webjars.npm/bulma         {:mvn/version "0.8.0"}
+    devcards/devcards             {:mvn/version "0.2.7"}
+    org.webjars.npm/bulma         {:mvn/version "0.9.1"}
 
     ;; App Deps
-    day8.re-frame/http-fx         {:mvn/version "v0.2.0"}
+    day8.re-frame/http-fx         {:mvn/version "0.2.1"}
     }}}}
