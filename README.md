@@ -6,8 +6,7 @@ STATUS: Pre-alpha, in design and prototyping phase.
 
 `tape.versions`
 
-[Monorepo](https://en.wikipedia.org/wiki/Monorepo) `deps.edn` versions to be
-used across subprojects.
+`deps.edn` versions to be used across subprojects.
 
 ### Usage
 
