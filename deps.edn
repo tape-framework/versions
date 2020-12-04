@@ -28,4 +28,6 @@
 
     ;; App Deps
     day8.re-frame/http-fx         {:mvn/version "0.2.1"}
-    }}}}
+    com.novemberain/validateur    {:mvn/version "2.6.0"}
+    com.andrewmcveigh/cljs-time   {:mvn/version "0.5.2"}
+    instaparse/instaparse         {:mvn/version "1.4.10"}}}}}
