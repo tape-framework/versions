@@ -10,9 +10,12 @@
     me.raynes/fs                  {:mvn/version "1.4.6"}
 
     ;; Core Deps
-    integrant/integrant           {:git/url "https://github.com/weavejester/integrant"
-                                   :sha     "b4f77b0fe9618c5d65bf2cafd27510e8e6ba7cdd"
+    integrant/integrant           {:git/url "https://github.com/clyfe/integrant"
+                                   :sha     "d83602c5f24e48ef95687fdc0a63cbde2de841c1"
                                    :tag     "reflike"}
+    integrant-repl/integrant-repl {:git/url "https://github.com/clyfe/integrant-repl"
+                                   :sha     "13eb1abeacd7bc0e0342daf798f99d665a93ce12"
+                                   :tag     "clojurescript-deps"}
     re-frame/re-frame             {:mvn/version "1.1.2"}
 
     ;; Modules Deps
