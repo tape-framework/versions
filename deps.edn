@@ -28,6 +28,8 @@
     day8.re-frame/test            {:mvn/version "0.1.5"}
     devcards/devcards             {:mvn/version "0.2.7"}
     org.webjars.npm/bulma         {:mvn/version "0.9.1"}
+    nrepl/nrepl                   {:mvn/version "0.8.2"}
+    cider/piggieback              {:mvn/version "0.5.2"}
 
     ;; Generator Deps
     seancorfield/clj-new          {:mvn/version "1.1.228"}
