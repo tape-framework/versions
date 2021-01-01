@@ -1,0 +1,60 @@
+== README
+
+`tape.versions`
+
+=== About
+
+`deps.edn` versions to be used across subprojects.
+
+=== Usage
+
+You should be familiar with Clojure's
+https://clojure.org/guides/deps_and_cli[Deps and CLI].
+
+==== Subproject deps
+
+In the subproject `deps.edn` declare local dependencies, and for versioned
+dependencies leave the coordinates empty. Ex:
+
+.deps.edn
+[source,clojure]
+----
+{:deps {me.raynes/fs {} ;; empty, omit :mvn/version "x.y.z"
+        some/local {:local/root "../local"}}}
+----
+
+==== Project-wide versions
+
+In `versions/deps.edn` add your project-wide deps versions as overrides. Ex:
+
+.deps.edn
+[source,clojure]
+----
+{:aliases
+ {:versions
+  {:override-deps
+   {me.raynes/fs {:mvn/version "1.4.6"}
+    ...}}}}
+----
+
+==== CLI run
+
+Set `/versions` dir as your `CLJ_CONFIG`, and prepend the `versions` alias. Ex:
+
+.shell
+[source,bash]
+----
+cd <subproject>
+CLJ_CONFIG=../versions clj -A:versions:<other>:<aliases> <and> <arguments>
+----
+
+=== Credits
+
+https://github.com/seancorfield[seancorfield] via
+https://ask.clojure.org/index.php/8440/equivalent-of-leiningens-managed-dependencies-in-deps-edn[forum]
+
+=== License
+
+Copyright © 2020 clyfe
+
+Distributed under the MIT license.
