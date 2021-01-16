@@ -1,5 +1,10 @@
-/target
-/.nrepl-port
-/versions.iml
-/.cpcache
 /.idea
+/versions.iml
+/.nrepl-port
+/.cpcache
+/.calva
+/.clj-kondo
+/.lsp
+/target
+/out
+/cljs-test-runner-out
