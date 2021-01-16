@@ -1,8 +1,7 @@
 {:aliases
  {:versions
   {:override-deps
-   {
-    ;; Dev Deps
+   {;; Dev Deps
     org.clojure/clojurescript     {:mvn/version "1.10.773"}
     com.bhauman/figwheel-main     {:mvn/version "0.2.12"}
     binaryage/devtools            {:mvn/version "1.0.2"}
@@ -42,6 +41,16 @@
     com.novemberain/validateur    {:mvn/version "2.6.0"}
     com.andrewmcveigh/cljs-time   {:mvn/version "0.5.2"}
     instaparse/instaparse         {:mvn/version "1.4.10"}}}
+
+  :dev
+  {:extra-deps
+   {nrepl/nrepl {:mvn/version "0.8.3"}
+    cider/cider-nrepl {:mvn/version "0.25.6"}
+    clj-kondo/clj-kondo {:mvn/version "2020.04.05"}
+    vlaaad/reveal {:mvn/version "1.1.171"}}
+   :main-opts ["-m" "nrepl.cmdline"
+               "--middleware" "[vlaaad.reveal.nrepl/middleware,cider.nrepl/cider-middleware]"
+               "-i"]}
 
   :test-clj
   {:main-opts ["-m" "cognitect.test-runner"]}
